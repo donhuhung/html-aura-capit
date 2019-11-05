@@ -2085,11 +2085,12 @@ footer #copyright .nav-inline {
     margin-top: 15px;
 }
 .social-footer a .fa {
-    font-size: 14px;
+    font-size: 25px;
     height: 35px;
     line-height: 35px;
     margin: 4px;
-    width: 35px;
+    width: 25px;
+    opacity: 0.5;
 }
 /* .tagcloud{
    a{
@@ -3604,6 +3605,11 @@ footer .section{
 footer .subscribe{
     margin-top: 5rem;
 }
+.subscribe .fa-envelope{
+    font-size: 30px;
+    margin-left: 20px;
+    margin-top: -10px;
+}
 /*Homepage*/
 .thumbnail-about{
     width: 500px;
@@ -3786,13 +3792,30 @@ h2, h3 {
 /*Investor*/
 #about-investor .bg-color{
     background-color: #DBCCBE;
+    position: absolute;
+    margin-left: 3rem;
+}
+#about-investor .bg-color:before{
+    content: '';
+    display: block;
+    width: 120px;
+    height: 255px;
 }
 #about-investor .block-description{
     background-color: #fff;
 }
+#financial{
+    margin-top: 22%;
+}
 #financial img{
     position: absolute;
     z-index: 9999;
+}
+#financial .item img{
+    position: relative;
+    width: 50px;
+    height: 55px;
+    margin-bottom: 30px;
 }
 .financial-item #carousel-area{
     background-color: #DBCCBE;
@@ -3823,4 +3846,158 @@ h2, h3 {
     justify-content:left;
     margin-left: -5px;
     bottom: -30% !important;
+}
+
+.bg-text-investor{
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+.thumbnail-mr-nhat{
+     width:385px;
+}
+.block-investor{
+    margin-top: 10%;
+}
+.block-investor img{
+    z-index: 9999;
+    position: relative;
+}
+
+.block-investor .block-description .description{
+    margin-top: 3rem;
+}
+.block-investor h3{
+    font-family: 'Copperplate', sans-serif;
+    font-size: 30px;
+}
+.title{
+    font-family: 'FivoSans-Black',sans-serif;
+}
+#financial .item{
+    border-left: 1px solid #DBCCBE;
+    padding: 0 50px;
+    height: 170px;
+}
+.last{
+    border-right: 1px solid #DBCCBE;
+}
+
+/*Animation click button*/
+.cta{
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all .2s ease;
+}
+.cta:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(233,236,239,.5);
+    width: 35px;
+    height: 35px;
+    transition: all .3s ease;
+}
+.cta span{
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}    
+.cta svg{
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all .3s ease;
+}  
+.cta svg:hover:before{
+    width: 100%;
+    background: #FFAB9D;
+}      
+.cta svg{
+    transform: translateX(0);
+}      
+.cta svg:active{
+    transform: scale(.96);
+}    
+
+.thumbnail-individual{
+    width: 100%;
+    height: 450px;
+    background-image: url('../images/thumbnail-individual.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#individual #carousel-area {
+    overflow: hidden;
+    background: #F3F3F3;
+    width: 680px;
+    padding: 20px;
+    margin: 0 25%;
+    height: 240px;
+}
+
+#individual #carousel-area .carousel-indicators li{
+    border:1px solid #000;
+}
+#individual .carousel-indicators{
+    justify-content:left;
+    margin-left: -5px;
+    bottom: -5rem !important;    
+}
+#individual .carousel-item h3{
+    text-transform: uppercase;
+}
+#individual .carousel-item .title-first{
+    margin-top: -10px;
+}
+.bg-title{
+    background-color: #DBCCBE;
+    position: absolute;
+    width: 675px;
+    margin: -100px 470px;
+    height: 100px;
+}
+.bg-see-more{
+    background-color: #DBCCBE;
+    position: absolute;
+    width: 13%;
+    margin: 0 61%;
+    height: 240px;
+}
+#aura-capital .item{
+    background-color: #DBCCBE;
+    padding: 70px 45px;
+    height: 190px;
+    width: 200px;
+    text-align: center;
+    opacity: 0.5;
+}
+#aura-capital .item.active{
+    opacity: 1;
+}
+
+/*Investment*/
+.investment #main-menu ul > li > a{
+    color: #61443B;
+}
+.investment #main-menu ul .dropdown .dropdown-menu a{
+    color: #61443B;
+}
+.nav-item .active{
+    border-bottom:1px solid #61443B;
 }
