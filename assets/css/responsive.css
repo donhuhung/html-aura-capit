@@ -518,4 +518,15 @@
     }
     #carousel-area .carousel-item .carousel-caption {
         top: 14%}
+    .isDesktop{
+        display: none;
+    }
+    .isMobile{
+        display: block;
+    }
+    
+    /*Hoempage*/
+    .bg-month, #milestone .bg-text img{
+        display: none;
+    }
 }
