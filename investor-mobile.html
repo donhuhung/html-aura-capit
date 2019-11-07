@@ -14,19 +14,17 @@
 
         <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css">
 
-        <link rel="stylesheet" type="text/css" href="assets/css/color-switcher.css">
 
         <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
         <link rel="stylesheet" media="screen" href="assets/css/font-awesome.min.css">
-        <link rel="stylesheet" media="screen" href="assets/css/simple-line-icons.css">
 
         <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.css">
         <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.css">
         <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
 
+        <link rel="stylesheet" type="text/css" href="assets/css/navbar.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="assets/css/green.css" media="screen" />
 
         <!--[if lt IE 9]>
@@ -44,10 +42,10 @@
                 <div class="menu-header">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" class="logo" alt="">
+                            <img src="assets/images/logo-investor.png" class="w-100" alt="">
                         </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">                            
+                            <img src="assets/images/mobile/navbar-toggler.png" class="navbar-toggler-icon" alt="">
                         </button>
                     </div>
 
@@ -377,56 +375,96 @@
 
 
         <footer>
-
-            <div class="container">
-                <div class="row section">
-                    <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
-                        <div class="logo-footer">
-                            <img src="assets/images/logo.png" alt="">
-                        </div>
-                        <div class="social-footer">
-                            <a href="#">Follow us: </a>                            
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="footer-widget col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-                        <div class="row subscribe">
-                            <p>Subscribe to our newsletter </p> 
-                            <a href="#">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>                       
-                        </div>                        
-                    </div>
-                </div>
-            </div>
-
-            <div id="copyright">
+            <div class="isDesktop">
                 <div class="container">
-                    <div class="row">                        
-                        <div class="col-md-6 col-sm-6">
-                            <ul class="nav nav-inline">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Sitemap</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Credits</a>
-                                </li>
-                            </ul>
+                    <div class="row section">
+                        <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
+                            <div class="logo-footer">
+                                <img src="assets/images/logo.png" alt="">
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">Follow us: </a>                            
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
                         </div>
-                        <div class="col-md-6 col-sm-6">
-                            <p class="copyright-text justify-content-end">
-                                Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, Vietnam
-                            </p>
+
+                        <div class="footer-widget col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+                            <div class="row subscribe">
+                                <p>Subscribe to our newsletter </p> 
+                                <a href="#">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </a>                       
+                            </div>                        
+                        </div>
+                    </div>
+                </div>
+
+                <div id="copyright">
+                    <div class="container">
+                        <div class="row">                        
+                            <div class="col-md-6 col-sm-6">
+                                <ul class="nav nav-inline">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Sitemap</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Credits</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p class="copyright-text justify-content-end">
+                                    Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, Vietnam
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!--Footer Mobile-->
+            <div class="isMobile">
+                <div class="container">                    
+                    <div class="row section">
+                        <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
+                            <div class="logo-footer">
+                                <img src="assets/images/mobile/logo-footer.png" alt="">
+                            </div>
+                            <div class="social-footer">                      
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="copyright">                    
+                        <div class="row">                        
+                            <div class="col-md-6 col-sm-6">
+                                <div class="item d-flex align-items-center">
+                                    <p>Subscribe to our newsletter </p> 
+                                    <a href="#">
+                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    </a> 
+                                </div>
+                                <div class="item">
+                                    <p>
+                                        Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, Vietnam
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
         </footer>
 
@@ -463,5 +501,6 @@
         <script src="assets/js/jquery.vide.js"></script>
 
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/start.js"></script>
     </body>
 </html>

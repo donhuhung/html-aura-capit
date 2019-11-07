@@ -1,5 +1,13 @@
 @font-face {
     font-family: Copperplate;
+    src: url(../fonts/Copperplate.ttf); 
+}
+@font-face {
+    font-family: CopperplateBold;
+    src: url(../fonts/CopperplateBold.ttf); 
+}
+@font-face {
+    font-family: Copperplate-Regular;
     src: url(../fonts/Copperplate-Regular.ttf); 
 }
 @font-face {
@@ -1005,9 +1013,9 @@ ul li > ul > li.active > a {
 }
 /* SlickMenu responsive */
 @media screen and (max-width: 768px) {
-    .navbar-toggler{
+    /*.navbar-toggler{
         display: none;
-    }
+    }*/
 }
 .top_search_con {
     background: #fff;
