@@ -856,7 +856,7 @@ i:hover {
     color: #fff;
     position: relative;
     padding: 15px 20px;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
 }
@@ -883,10 +883,10 @@ i:hover {
     height: auto;
     padding: 10px 20px 10px;
     line-height: 16px;
-    font-weight: 400;
+    font-weight: 700;
     border-top: 1px solid #e2e6e7;
     transition: all 0.3s ease-in-out 0s;
-    font-family: 'FivoSans-Light', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
 
 }
 #main-menu ul .dropdown .dropdown-menu a:hover,
@@ -3577,7 +3577,7 @@ ul.contact-info2 i.fa {
     padding: 20px 0;
 }
 .nav-item .nav-link{
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
 }
 .dropdown-menu{
     background-color: unset;
@@ -3629,7 +3629,7 @@ footer .subscribe{
 }
 .block-title{
     background-color: #DBCCBE;
-    padding: 5% 20%;
+    padding: 5% 17%;
     height: 650px;
 }
 #about p{
@@ -3642,14 +3642,31 @@ footer .subscribe{
     padding-bottom: 20px;
 }
 #about .description{
-    margin-bottom: 8rem;
+    margin-bottom: 6rem;
 }
 .see-more{
     background-color: #231F20;
-    padding: 25px 65px;
+    padding: 10px 20px;
     border: 1px solid #231F20;
-    color:#fff;
-    margin-top: 2rem;
+    color: #fff;
+    margin-top: 4rem;
+    position: relative;
+    display: block;
+    width: 120px;
+}
+#news .see-more{
+    margin-top: 7rem;
+}
+.description-carousel .see-more{
+    margin-top: 2rem !important;
+}
+#news h4{
+    font-size: 35px;
+    font-family: 'Copperplate-Regular',sans-serif;
+    font-weight: 600;
+}
+.description-carousel{
+    padding: 12rem 5rem;
 }
 #milestone .description{
     padding: 40px 50px;
@@ -3660,7 +3677,8 @@ footer .subscribe{
 }
 #milestone .bg-text img{
     position: absolute; 
-    margin: 7rem 0;
+    margin: 0;
+    width: 60%;
 }
 #milestone .bg-text .bg-color{
     display: block;
@@ -3675,6 +3693,10 @@ footer .subscribe{
 }
 .font-copperplate{
     font-family: 'Copperplate', sans-serif;
+}
+.font-copperplate-regular{
+    font-family: 'Copperplate-Regular', sans-serif;
+    font-weight: 600;
 }
 h4{
     font-size: 26px;
@@ -3729,10 +3751,10 @@ h4{
 
 /* Timeline */
 h1 {
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
     letter-spacing: 1.5px;
     color: #231F20;  
-    font-weight: 400;
+    font-weight: 600;
 }
 #timeline-content {
     margin-top: 10px;
@@ -3764,6 +3786,7 @@ h2, h3 {
     padding-bottom: 15px;
     margin-bottom: 15px;  
     position: relative;
+    cursor: pointer;
 }
 
 .timeline .event:last-of-type { 
@@ -3835,8 +3858,8 @@ h2, h3 {
 }
 #financial .item img{
     position: relative;
-    width: 50px;
-    height: 55px;
+    width: auto;
+    height: auto;
     margin-bottom: 30px;
 }
 .financial-item #carousel-area{
@@ -3861,9 +3884,13 @@ h2, h3 {
     z-index: 9999;
 }
 .block-left .see-more{
-    padding: 30px 65px;
+    padding: 20px 35px;
+    width: 150px;
 }
-
+.aura-title{
+    font-family: 'FivoSans-Black',sans-serif;
+    font-size: 14px;
+}
 .financial-item .carousel-indicators{
     justify-content:left;
     margin-left: -5px;
@@ -3891,12 +3918,14 @@ h2, h3 {
     padding: 0 50px;
 }
 .block-investor h3{
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
     font-size: 30px;
     padding: 20px;
+    font-weight: 600;
 }
 .title{
     font-family: 'FivoSans-Black',sans-serif;
+    font-size: 16px;
 }
 .benny{
     z-index: 99999;
@@ -3914,6 +3943,17 @@ h2, h3 {
     width: 75%;
     margin-left: 20%;
     margin-top: 3rem;
+}
+.click-view{
+    width: 45px !important;
+    height: auto;
+    margin-left: 60%;
+}
+#aura-capital .click-view{
+    margin-left: 0;
+}
+.bg-see-more .click-view{
+    margin: 40%;
 }
 /*Animation click button*/
 .cta {
@@ -3999,8 +4039,9 @@ h2, h3 {
     /*margin-top: -10px;*/
 }
 #individual .carousel-item h3{
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
     font-size: 35px;
+    font-weight: 500;
 }
 .bg-title {
     background-color: #DBCCBE;
@@ -4018,7 +4059,7 @@ h2, h3 {
 }
 #aura-capital .item{
     background-color: #DBCCBE;
-    padding: 70px 45px;
+    padding: 70px 30px;
     height: 190px;
     width: 200px;
     text-align: center;
@@ -4059,7 +4100,7 @@ footer .nav-item .active{
     height: 800px;
     width: 445px;
     position: absolute;
-    margin: -10rem -2rem;
+    margin: -10rem -4rem;
 }
 #categories #carousel-area {    
     background: none;
@@ -4081,9 +4122,10 @@ footer .nav-item .active{
     padding: 20px;
 }
 #group .description h3{
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
     font-size: 18px;
     margin-bottom: 20px;
+    font-weight: 600;
 }
 #group .description p{
     font-family: 'FivoSans-Light', sans-serif;
@@ -4096,12 +4138,14 @@ footer .nav-item .active{
 }
 .block-activity .description{
     padding: 10px 30px;
+    width: 350px;
 }
 .block-activity h3{
     margin-top: 7rem;
     margin-left: -80px;
-    font-family: 'Copperplate', sans-serif;
+    font-family: 'Copperplate-Regular', sans-serif;
     font-size: 38px;
+    font-weight: 600;
 }
 .block-activity #carousel-area{
     position: absolute;
@@ -4141,6 +4185,9 @@ aside h3 {
     margin: 0 0 10px 0;
     line-height: 24px;
 }
+.aura-type p{
+    margin-bottom: 0rem;
+}
 
 /* Class name via Modernizr */
 .csstransforms aside {
@@ -4168,7 +4215,7 @@ aside h3 {
 }
 #group .education-bottom{
     position: absolute;
-    margin-top: -8%;
+    margin-top: -7%;
     margin-left: 5%;
 }
 #group .f-b{
@@ -4179,15 +4226,17 @@ aside h3 {
 #group .technology
 {
     position: absolute;
-    margin-top: -4%;
-    margin-left: 4%;
+    margin-top: -58px;
+    margin-left: 67px;
+    width: 155px;
 }
 
 #group .community
 {
     position: absolute;
-    margin-top: -1%;
-    margin-left: -2%;
+    margin-top: -8px;
+    margin-left: -20px;
+    width: 195px;
 }
 #group  .real-estate{
     position: absolute;
@@ -4195,16 +4244,16 @@ aside h3 {
     margin-left: -8%;
 }
 .text-agency{
-    width: 65px;
+    width: 70px;
     position: absolute;
     left: 60%;
-    top: 20%;
+    top: 30%;
 }
 .text-marketing{
-    width: 100px;
+    width: 90px;
     position: absolute;
     left: 60%;
-    top: 10%;
+    top: 15%;
 }
 
 /*Animation scroll menu*/

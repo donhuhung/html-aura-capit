@@ -4,6 +4,15 @@ $(document).ready(function () {
     AURA.openNav();
     AURA.closeNav();
 
+    $(".timeline .event").hover(
+        function() {
+            $('.timeline .event').removeClass('active');
+            $(this).addClass('active');
+        }, function() {
+            $('.timeline .event').removeClass('active');
+        }
+    );
+
 })
 
 AURA.openNav = function () {
