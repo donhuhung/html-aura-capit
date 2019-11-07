@@ -555,6 +555,7 @@
         padding: 25px 125px;
         font-size: 16px;
         margin: 0 20px;
+        width: auto;
     }
     #news .description{
         text-align: center;
@@ -568,6 +569,7 @@
         display: block;
         position: relative;
         margin-top: -10%; 
+        width: auto;
     }
     .thumbnail-about {
         width: 100%;
@@ -601,12 +603,12 @@
         background: #61443B;
         z-index: 9999999;
     }
-    .sidenav .closebtn {
+    .closebtn {
         position: absolute;
         top: 20px;
-        left: 5px;
-        font-size: 25px;
-        color: #fff !important;
+        right: 10px;                
+        cursor: pointer;        
+        width: 40px;
     }
     .sidenav a {
         text-decoration: none;
@@ -654,10 +656,10 @@
         font-size: 27px;
         padding: 25px 0;
     }
-    .sidenav .item-info-foo .fa-envelope{
-        color:#000;
-        font-size: 22px;
-        margin-left:20px; 
+    .newsletter{        
+        margin-left: 15px;
+        margin-top: -20px;
+        width: 25px;
     }
     .contact-foo{
         position: absolute;
@@ -694,10 +696,11 @@
         text-align: center;
         padding: 10px;
     }
-    .social-footer a .fa{
-        font-size: 40px;
-        padding: 10px 40px;
-        opacity: 1;
+    .social-footer img{        
+        padding: 10px 25px;
+        width: 90px;
+        height: auto;
+        margin-right: 10px;        
     }
     footer .fa-envelope{
         font-size: 25px;
@@ -754,7 +757,8 @@
         margin-left: -25px;
     }
     .btn-see-more .see-more{
-        padding: 35px 90px;
+        padding: 30px 110px;
+        width: 300px;
     }
 
     /* Insestment*/
@@ -868,5 +872,25 @@
         width: 40px;
         height: 35px;
         margin-top: 10px;
+    }
+    .logo-mobile{
+        width: 85px;    
+        margin: 0 20px 25px;
+    }
+    .menu-footer{
+        margin-left: 35%;        
+    }
+    .menu-footer li{
+        line-height: 65px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .logo-mobile{
+        transform: translatex(10%);        
+        width: 100%;
+        height: auto;
+    }
+    .dropdown-menu{
+        border: none;
     }
 }

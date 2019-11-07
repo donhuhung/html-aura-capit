@@ -41,11 +41,18 @@
             <nav class="navbar navbar-expand-md">
                 <div class="menu-header">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo.png" class="logo" alt="">
-                        </a>
+                        <div class="isDesktop">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/logo.png" class="logo" alt="">
+                            </a>
+                        </div>
+                        <div class="isMobile">
+                            <a class="navbar-brand" href="index.html">
+                                <img src="assets/images/mobile/logo-aura.png" class="logo-mobile" alt="">
+                            </a>
+                        </div>                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                            <img src="assets/images/mobile/navbar-toggler-white.png" class="navbar-toggler-icon" alt="">
                         </button>
                     </div>
 
@@ -82,19 +89,17 @@
                             </ul>
                         </div>
                     </div>                    
-                    <div class="isMobile">
-
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">
-                            <div class="sidenav" id="mySidenav">
+                    <div class="isMobile">                                                
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">      <div class="sidenav" id="mySidenav">
+                                <div>
+                                    <img src="assets/images/icon/close.png" class="closebtn" alt=""/>
+                                </div>
                                 <ul class="navbar-nav mr-auto">
                                     <li>
-                                        <i class="fa fa-times closebtn"></i>         
-                                    </li>                      
-                                    <!--<li>
-                                        <a href="#" class="navbar-brand">
+                                        <a href="#" class="logo-mobile">
                                             <img src="assets/images/mobile/logo.png" alt=""/>
                                         </a>
-                                    </li>-->
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Introduction
@@ -112,10 +117,10 @@
                                         </ul>                                        
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Investment</a>
+                                        <a class="nav-link" href="/investment-mobile.html">Investment</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Investors</a>
+                                        <a class="nav-link" href="/investor-mobile.html">Investors</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" href="#">News</a>
@@ -610,9 +615,15 @@
                                 <img src="assets/images/mobile/logo-footer.png" alt="">
                             </div>
                             <div class="social-footer">                      
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                <a href="#">
+                                    <img src="assets/images/icon/instagram.png" alt
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/icon/youtube.png" alt
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/icon/facebook.png" alt
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -623,7 +634,7 @@
                                 <div class="item d-flex align-items-center">
                                     <p>Subscribe to our newsletter </p> 
                                     <a href="#">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                                        <img src="assets/images/icon/email.png" class="newsletter" alt="">
                                     </a> 
                                 </div>
                                 <div class="item">
@@ -633,6 +644,13 @@
                                 </div>
 
                             </div>
+                        </div>
+                        <div class="row">
+                            <ul class="menu-footer">
+                                <li>Sitemap</li>
+                                <li>Contact</li>
+                                <li>Credits</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
