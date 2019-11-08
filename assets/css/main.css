@@ -1005,7 +1005,7 @@ ul li > ul > li.active > a {
 @media screen and (max-width: 767px) {
     .navbar-brand {
         position: absolute;
-        top: 12px;
+        top: 5px;
     }
     /* #menu is the original menu */
     #wpb-mobile-menu {
@@ -3663,12 +3663,11 @@ footer .subscribe{
     margin-top: 7rem;
 }
 .description-carousel .see-more{
-    margin-top: 2rem !important;
+    margin-top: 1rem !important;
 }
 #news h4{
-    font-size: 35px;
-    font-family: 'Copperplate-Regular',sans-serif;
-    font-weight: 600;
+    font-size: 55px;
+    font-family: 'Copperplate-Regular',sans-serif;    
 }
 .description-carousel{
     padding: 12rem 5rem;
@@ -4127,11 +4126,14 @@ footer .nav-item .active{
     margin-right: 30px;
     padding: 20px;
 }
+#group .item .description{
+    position: relative;
+}
 #group .description h3{
     font-family: 'Copperplate-Regular', sans-serif;
     font-size: 18px;
     margin-bottom: 20px;
-    font-weight: 600;
+    position: relative;
 }
 #group .description p{
     font-family: 'FivoSans-Light', sans-serif;
@@ -4216,25 +4218,27 @@ aside h3 {
 }
 #group .education-top{
     position: absolute;
-    margin-left: -5%;
-    margin-top: -4%;
+    top: -70px;
+    left: -70px;
+    bottom: 0;
 }
 #group .education-bottom{
     position: absolute;
-    margin-top: -7%;
-    margin-left: 5%;
+    top: 110px;
+    bottom: 0;
+    left: 50%;
 }
 #group .f-b{
     position: absolute;
-    margin-top: 1%;
-    margin-left: 2%;
+    top:180px;
 }
 #group .technology
 {
     position: absolute;
-    margin-top: -58px;
-    margin-left: 67px;
-    width: 155px;
+    bottom: 0;
+    top: 100px;
+    left: 60px;
+    right: 0;
 }
 
 #group .community
@@ -4246,8 +4250,8 @@ aside h3 {
 }
 #group  .real-estate{
     position: absolute;
-    margin-top: -7%;
-    margin-left: -8%;
+    top: 80px;
+    left: -150px;
 }
 .text-agency{
     width: 70px;
