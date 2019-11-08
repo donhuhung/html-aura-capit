@@ -868,6 +868,12 @@
         z-index: 9999;
         margin-bottom: 3rem;
     }
+    .box-real-estate{
+        background-image: url(../images/mobile/box-real-estate.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
     #group .real-estate {
         width: 260px;
         left: -50%;
