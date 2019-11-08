@@ -4119,7 +4119,7 @@ footer .nav-item .active{
     position: relative;
     z-index: 9999;
 }
-#group .item{
+#group .isDesktop .item{
     background-color: #EBEBEB;
     height: 280px;
     width: calc((85%/5));

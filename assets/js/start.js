@@ -28,7 +28,7 @@ $(document).ready(function () {
 })
 
 AURA.openNav = function () {
-    $("body").delegate(".navbar-toggler-icon", "click", function () {
+    $("body").delegate(".toggle-menu", "click", function () {
         $("#mySidenav").fadeIn(500);
         $("body").addClass('no-scroll');        
         showMenu = true;

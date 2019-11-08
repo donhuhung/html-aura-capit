@@ -829,7 +829,7 @@
     #carousel-area h3{
         font-family: 'Copperplate-Regular',sans-serif;
         font-size: 24px;        
-        margin: 40px 0;
+        margin: 0;
     }
     .aura-type p{
         margin-bottom: 1rem;
@@ -861,19 +861,27 @@
     #group .description p, #group .description h3{
         padding: 0 25px;
     }
-    #group .item{
-        width: 70%;
-        height: 300px;
-        margin-left: 15%;
-        z-index: 9999;
-        margin-bottom: 3rem;
-    }
     .box-real-estate{
-        background-image: url(../images/mobile/box-real-estate.png);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
+        margin: 0 -12%;
+        width: 90%;
+        position: relative;
     }
+    .box-education{
+        margin: 0 -5%;
+        width: 90%;
+        position: relative;
+    }
+    #group .item{
+        position: absolute;
+        left: 20%;
+        margin-top: 5%;
+    }
+    #group .row{
+        margin-top: 2rem;
+    }
+    #group .row:nth-child(1), #group .row:nth-child(2) {
+        margin-top: 0;
+    }    
     #group .real-estate {
         width: 260px;
         left: -50%;
@@ -904,10 +912,7 @@
         left: 0;
         width: 240px;
         margin-top: 0;
-    }
-    #group .row:nth-child(2) {
-        margin-top: 3rem;
-    }
+    }    
 
     /*Investor*/
     #financial .item{
@@ -923,10 +928,10 @@
         margin-bottom: 2rem;
         margin-left: 10%;
     }
-    .navbar-toggler-icon{
+    .toggle-menu{
         width: 40px;
         height: 35px;
-        margin-top: 10px;
+        margin-top: 15px;
     }
     .logo-mobile{        
         margin: 0 20px 25px; 
@@ -958,23 +963,31 @@
     #financial img{
         position: relative;
         z-index: 9999;
+        height: auto;
     }
     .financial-item #carousel-area{
         margin-top: 0;
         transform: none;
         width: auto;
-        padding: 30px;
+        padding: 0;
+        height: auto;
+        background: none;
     }
     .financial-item #carousel-area #carousel-slider{
         width: auto;
     }
+    #financial #carousel-area .carousel-item .description{
+        padding: 0 20px;
+    }
     #financial .see-more{
-        width: auto;
-        padding: 30px 0;
-        margin-top: -3rem;
-    }    
-    .financial-item, #financial .description{
-        padding: 0 25px;
+        width: 240px;
+        padding: 25px 0;
+        margin-top: -1px;
+        position: relative;
+        margin-left: 6rem;
+    } 
+    #financial #carousel-area .carousel-item{
+        height: auto;
     }
     #financial .item{
         height: auto;
@@ -1025,8 +1038,7 @@
         position: absolute;
         top: 10px;
         bottom: 0;
-        right: 10px;
-        z-index: 999999;
+        right: 10px;        
         cursor: pointer;
     }
     .form-search-header {
