@@ -4304,3 +4304,6 @@ aside h3 {
         transform:translateY(0)
     }
 }
+.search{
+    display: none;
+}
