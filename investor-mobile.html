@@ -35,7 +35,12 @@
             <![endif]-->
     </head>
     <body>
-
+        <div class="oveplay"></div>
+        <div class="isMobile">
+            <div>
+                <img src="assets/images/icon/close.png" alt="" class="closebtn"/>
+            </div>
+        </div>
         <header id="header-wrap">
 
             <nav class="navbar navbar-expand-md">
@@ -46,8 +51,8 @@
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">                            
                             <img src="assets/images/mobile/navbar-toggler.png" class="navbar-toggler-icon" alt="">
-                        </button>
-                    </div>
+                        </button>                                               
+                    </div>                    
 
                     <!--Menu Desktop-->
                     <div class="isDesktop">
@@ -60,13 +65,13 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="item-nav ">
-                                            <a href="#">About</a>
+                                            <a href="/index.html#about">About</a>
                                         </li>
                                         <li class="item-nav ">
-                                            <a href="#">The Commitment</a>
+                                            <a href="/index.html#commitment">The Commitment</a>
                                         </li>
                                         <li class="item-nav ">
-                                            <a href="#">Milestones</a>
+                                            <a href="/index.html#milestone">Milestones</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -82,35 +87,28 @@
                             </ul>
                         </div>
                     </div>                    
-                    <div class="isMobile">
-
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">
-                            <div>
-                                <img src="assets/images/icon/close.png" class="closebtn" alt=""/>
-                            </div>
-                            <div class="sidenav" id="mySidenav">
+                    <div class="isMobile">                                                                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">      
+                            <div class="sidenav" id="mySidenav">                                
                                 <ul class="navbar-nav mr-auto">
                                     <li>
-                                        <i class="fa fa-times closebtn"></i>         
-                                    </li>                      
-                                    <!--<li>
-                                        <a href="#" class="navbar-brand">
-                                            <img src="assets/images/mobile/logo.png" alt=""/>
+                                        <a href="#">
+                                            <img src="assets/images/mobile/logo.png" alt="" class="logo-mobile"/>
                                         </a>
-                                    </li>-->
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Introduction
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="item-nav ">
-                                                <a href="#">About</a>
+                                                <a href="/index.html/#about">About</a>
                                             </li>
                                             <li class="item-nav ">
-                                                <a href="#">The Commitment</a>
+                                                <a href="/index.html/#commitment">The Commitment</a>
                                             </li>
                                             <li class="item-nav ">
-                                                <a href="#">Milestones</a>
+                                                <a href="/index.html/#milestone">Milestones</a>
                                             </li>
                                         </ul>                                        
                                     </li>
@@ -125,32 +123,28 @@
                                     </li>
                                 </ul>                    
                                 <div class="container">
-                                    <div class="d-flex">
-                                        <div class="ml-auto">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="item item-info-foo px-3 pb-3">
-                                                    <p class="d-flex align-items-center social_foo hidden">
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                                                    </p>
-                                                </div>
-                                                <div class="contact-foo">
-                                                    <div class="item item-info-foo px-3 pb-3 d-flex align-items-center">                                        
-                                                        <p>Subscribe to our newsletter </p> 
-                                                        <a href="#">
-                                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                        </a>                                      
-                                                    </div>
-                                                    <div class="item item-info-foo px-3 pb-3">                                        
-                                                        <p class="pt-2">
-                                                            <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
-                                                        </p>                                        
-                                                    </div>
-                                                </div>
-
+                                    <div class="d-flex flex-wrap">
+                                        <div class="item item-info-foo px-4">
+                                            <p class="d-flex align-items-center social_foo">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                            </p>
+                                        </div>
+                                        <div class="contact-foo">
+                                            <div class="item item-info-foo px-4 d-flex align-items-center">                                        
+                                                <p>Subscribe to our newsletter </p> 
+                                                <a href="#">
+                                                    <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                                </a>                                      
+                                            </div>
+                                            <div class="item item-info-foo px-4">                                        
+                                                <p class="pt-2">
+                                                    <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
+                                                </p>                                        
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -160,23 +154,30 @@
                 </div>
             </nav>
             <div class="banner">
-                <img src="assets/images/banner-investor.jpg" alt=""/>
-            </div>            
+                <div class="isDesktop">
+                    <img src="assets/images/banner-investor.jpg" alt=""/>
+                </div>
+                <div class="isMobile"> 
+                    <img src="assets/images/mobile/banner-investor.png" alt=""/>
+                </div>                
+            </div>    
+
         </header>
 
         <section id="about-investor">
             <div class="container">                
                 <div class="row block-investor">                    
-                    <div class="col-sm-6 col-md-7">
+                    <div class="col-12">
                         <div>
-                            <div class="bg-color"></div>                            
+                            <div class="bg-color">
+                                <p class="text-benny">Benny Đâu</p>
+                            </div>                            
                             <div class="intro-investor">
-                                <img src="assets/images/benny-dau.png" class="benny" alt=""/>
-                                <img src="assets/images/mr-nhat.png" alt=""/>
+                                <img src="assets/images/mr-nhat.png" class="mr-nhat w-100" alt=""/>
                             </div>                            
                         </div>                                                
                     </div>
-                    <div class="col-sm-6 col-md-5">
+                    <div class="col-12">
                         <div class="block-description">
                             <h3>
                                 THE MESSAGE
@@ -197,85 +198,81 @@
 
         </section>
 
-        <section id="financial" class="section">
+        <section id="financial">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/images/mobile/finacial.png" class="w-100" alt=""/>                                          
+                </div>
+                <div class="col-12">
+                    <div class="financial-item">
+                        <div id="carousel-area">
+                            <div id="carousel-slider" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-slider" data-slide-to="1"></li>
+                                </ol>
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">                                            
+                                        <div class="description">
+                                            <h3 class="font-copperplate">FINANCIAL <br/> CALENDAR</h3>
+                                            <p>
+                                                View the key dates in our calendar for results presentations, shareholder 
+                                                meetings and dividend timings, and download a reminder for each.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">                                            
+                                        <div class="description">
+                                            <h3>FINANCIAL <br/> CALENDAR</h3>
+                                            <p>
+                                                View the key dates in our calendar for results presentations, shareholder 
+                                                meetings and dividend timings, and download a reminder for each.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>                                            
+                            </div>
+                        </div>       
+
+                    </div> 
+                    <div class="description">
+                        <a href="#" class="see-more fivo-light">See more</a>
+                    </div>  
+
+                </div>
+            </div>
+
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-6 block-left">
-                        <img src="assets/images/finacial.jpg" class="w-100" alt=""/>
-                        <div class="description">
-                            <a href="#" class="see-more fivo-light">See more</a>
-                        </div>                        
-                    </div>
-                    <div class="col-sm-6 col-md-6">
-                        <div class="financial-item">
-                            <div id="carousel-area">
-                                <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-                                        <li data-target="#carousel-slider" data-slide-to="1"></li>
-                                    </ol>
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="carousel-item active">                                            
-                                            <div class="description">
-                                                <h3 class="font-copperplate">FINANCIAL <br/> CALENDAR</h3>
-                                                <p>
-                                                    View the key dates in our calendar for results presentations, shareholder 
-                                                    meetings and dividend timings, and download a reminder for each.
-                                                </p>
-                                            </div>
-                                        </div>
-                                        <div class="carousel-item">                                            
-                                            <div class="description">
-                                                <h3>FINANCIAL <br/> CALENDAR</h3>
-                                                <p>
-                                                    View the key dates in our calendar for results presentations, shareholder 
-                                                    meetings and dividend timings, and download a reminder for each.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>                                            
-                                </div>
-                            </div>       
-
-                        </div> 
-
-                    </div>
-                </div>
-
-                <div class="row block-publication">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-12">
                         <div class="item">
-                            <img src="assets/images/icon/icon-publication.png">
-                            <a href="javascript:void(0)" class="cta">                                  
-                                <svg width="20px" height="60px" viewBox="0 0 20 60">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
+                            <div class="block-image d-flex align-items-center">
+                                <img src="assets/images/icon/icon-publication.png">
+                                <img src="assets/images/click-view.png" class="click-view">
+                            </div>                        
                             <p class="title">Publications</p>
                             <p>Academic materials from AURA experts</p>
-                        </div>                        
-                    </div>
+                        </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    </div>                        
+
+                    <div class="col-12">
                         <div class="item">
-                            <div>
+                            <div class="block-image d-flex align-items-center">
                                 <img src="assets/images/icon/icon-desk.png">
-                                <a href="javascript:void(0)" class="cta">                                  
-                                    <svg width="20px" height="60px" viewBox="0 0 20 60">
-                                    <path d="M1,5 L11,5"></path>
-                                    <polyline points="8 1 12 5 8 9"></polyline>
-                                    </svg>
-                                </a>
+                                <img src="assets/images/click-view.png" class="click-view">
                             </div>                            
                             <p class="title">Deck Of Presentation</p>
                             <p>The comprehensive solution for your business</p>
                         </div>                      
                     </div>
 
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-12">
                         <div class="item last">
-                            <img src="assets/images/icon/icon-release.png">
+                            <div class="block-image d-flex align-items-center">
+                                <img src="assets/images/icon/icon-release.png">
+                                <img src="assets/images/click-view.png" class="click-view">
+                            </div>                        
                             <p class="title">Press Release</p>
                             <p>What people say about us</p>
                         </div>                      
@@ -284,11 +281,13 @@
 
             </div>
 
+
         </section>
 
         <section id="individual">
-            <div class="thumbnail-individual"></div>
-            <div class="bg-title"></div>
+            <div>
+                <img src="assets/images/mobile/thumbnail-individual.png" class="w-100">
+            </div>            
             <div class="row">
                 <div id="carousel-area">
                     <div id="carousel-slider-individual" class="carousel slide" data-ride="carousel">
@@ -299,8 +298,10 @@
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">                                
                                 <div class="description">
-                                    <h3 class="title-first">individual</h3>
-                                    <h3 class="title-last">shareholders</h3>
+                                    <div class="bg-title">
+                                        <h3 class="title-first">individual</h3>
+                                        <h3 class="title-last">shareholders</h3>
+                                    </div>                                
                                     <p class="fivo-light">
                                         Why you should become a shareholder and share AURA’s adventure
                                     </p>
@@ -308,8 +309,10 @@
                             </div>
                             <div class="carousel-item">                                
                                 <div class="description">
-                                    <h3 class="title-first">individual</h3>
-                                    <h3 class="title-last">shareholders</h3>
+                                    <div class="bg-title">
+                                        <h3 class="title-first">individual</h3>
+                                        <h3 class="title-last">shareholders</h3>
+                                    </div>     
                                     <p class="fivo-light">
                                         Why you should become a shareholder and share AURA’s adventure
                                     </p>
@@ -318,7 +321,9 @@
                         </div>                                            
                     </div>
                 </div>     
-                <div class="bg-see-more"></div> 
+                <div class="bg-see-more">
+                    <img src="assets/images/click-view.png" class="click-view">
+                </div> 
             </div>                    
 
         </section>
@@ -329,46 +334,26 @@
                 <div class="row">
                     <div class="col-sm-6 col-md-3">
                         <div class="item">
-                            <p>Share quotation</p>
-                            <a href="#" class="cta">                                  
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
+                            <p class="aura-title">Share quotation</p>
+                            <img src="assets/images/click-view.png" class="click-view">
                         </div>
                     </div> 
                     <div class="col-sm-6 col-md-3">
                         <div class="item active">
-                            <p>Capital structure</p>
-                            <a href="#" class="cta">                                  
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
+                            <p class="aura-title">Capital structure</p>
+                            <img src="assets/images/click-view.png" class="click-view">
                         </div>
                     </div> 
                     <div class="col-sm-6 col-md-3">
                         <div class="item">
-                            <p>Devidend</p>
-                            <a href="#" class="cta">                                  
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
+                            <p class="aura-title">Devidend</p>
+                            <img src="assets/images/click-view.png" class="click-view">
                         </div>
                     </div> 
                     <div class="col-sm-6 col-md-3">
                         <div class="item">
-                            <p>Debt finanicing</p>
-                            <a href="#" class="cta">                                  
-                                <svg width="13px" height="10px" viewBox="0 0 13 10">
-                                <path d="M1,5 L11,5"></path>
-                                <polyline points="8 1 12 5 8 9"></polyline>
-                                </svg>
-                            </a>
+                            <p class="aura-title">Debt finanicing</p>
+                            <img src="assets/images/click-view.png" class="click-view">
                         </div>
                     </div>                
                 </div> 
@@ -438,15 +423,15 @@
                             <div class="logo-footer">
                                 <img src="assets/images/mobile/logo-footer.png" alt="">
                             </div>
-                            <div class="social-footer">                      
+                            <div class="social-footer d-flex align-items-center">                      
                                 <a href="#">
-                                    <img src="assets/images/icon/instagram.png" alt
+                                    <img src="assets/images/icon/instagram.png" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/youtube.png" alt
+                                    <img src="assets/images/icon/youtube.png" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/facebook.png" alt
+                                    <img src="assets/images/icon/facebook.png" alt/>
                                 </a>
                             </div>
                         </div>
@@ -454,8 +439,8 @@
 
                     <div id="copyright">                    
                         <div class="row">                        
-                            <div class="col-md-6 col-sm-6">
-                                <div class="item d-flex align-items-center">
+                            <div class="col-12">
+                                <div class="item d-flex align-items-center px-5">
                                     <p>Subscribe to our newsletter </p> 
                                     <a href="#">
                                         <img src="assets/images/icon/email.png" class="newsletter" alt="">

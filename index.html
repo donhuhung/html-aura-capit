@@ -35,6 +35,13 @@
             <![endif]-->
     </head>
     <body>
+        <div class="oveplay"></div>
+        <div class="isMobile">
+            <div>
+                <img src="assets/images/icon/close.png" alt="" class="closebtn"/>
+            </div>
+        </div>
+
 
         <header id="header-wrap">
 
@@ -53,7 +60,7 @@
                         </div>                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                             <img src="assets/images/mobile/navbar-toggler-white.png" class="navbar-toggler-icon" alt="">
-                        </button>
+                        </button>                        
                     </div>
 
                     <!--Menu Desktop-->
@@ -67,13 +74,13 @@
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li class="item-nav ">
-                                            <a href="#">About</a>
+                                            <a href="#about">About</a>
                                         </li>
                                         <li class="item-nav ">
-                                            <a href="#">The Commitment</a>
+                                            <a href="#commitment">The Commitment</a>
                                         </li>
                                         <li class="item-nav ">
-                                            <a href="#">Milestones</a>
+                                            <a href="#milestone">Milestones</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -89,15 +96,13 @@
                             </ul>
                         </div>
                     </div>                    
-                    <div class="isMobile">                                                
-                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">      <div class="sidenav" id="mySidenav">
-                                <div>
-                                    <img src="assets/images/icon/close.png" class="closebtn" alt=""/>
-                                </div>
+                    <div class="isMobile">                                                                        
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-mobile px-0">      
+                            <div class="sidenav" id="mySidenav">                                
                                 <ul class="navbar-nav mr-auto">
                                     <li>
-                                        <a href="#" class="logo-mobile">
-                                            <img src="assets/images/mobile/logo.png" alt=""/>
+                                        <a href="#">
+                                            <img src="assets/images/mobile/logo.png" alt="" class="logo-mobile"/>
                                         </a>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -106,13 +111,13 @@
                                         </a>
                                         <ul class="dropdown-menu">
                                             <li class="item-nav ">
-                                                <a href="#">About</a>
+                                                <a href="/index.html/#about">About</a>
                                             </li>
                                             <li class="item-nav ">
-                                                <a href="#">The Commitment</a>
+                                                <a href="/index.html/#commitment">The Commitment</a>
                                             </li>
                                             <li class="item-nav ">
-                                                <a href="#">Milestones</a>
+                                                <a href="/index.html/#milestone">Milestones</a>
                                             </li>
                                         </ul>                                        
                                     </li>
@@ -127,32 +132,28 @@
                                     </li>
                                 </ul>                    
                                 <div class="container">
-                                    <div class="d-flex">
-                                        <div class="ml-auto">
-                                            <div class="d-flex flex-wrap">
-                                                <div class="item item-info-foo px-3 pb-3">
-                                                    <p class="d-flex align-items-center social_foo hidden">
-                                                        <a href="#"><i class="fa fa-instagram"></i></a>
-                                                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                        <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                                                    </p>
-                                                </div>
-                                                <div class="contact-foo">
-                                                    <div class="item item-info-foo px-3 pb-3 d-flex align-items-center">                                        
-                                                        <p>Subscribe to our newsletter </p> 
-                                                        <a href="#">
-                                                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                        </a>                                      
-                                                    </div>
-                                                    <div class="item item-info-foo px-3 pb-3">                                        
-                                                        <p class="pt-2">
-                                                            <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
-                                                        </p>                                        
-                                                    </div>
-                                                </div>
-
+                                    <div class="d-flex flex-wrap">
+                                        <div class="item item-info-foo px-4">
+                                            <p class="d-flex align-items-center social_foo">
+                                                <a href="#"><i class="fa fa-instagram"></i></a>
+                                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                            </p>
+                                        </div>
+                                        <div class="contact-foo">
+                                            <div class="item item-info-foo px-4 d-flex align-items-center">                                        
+                                                <p>Subscribe to our newsletter </p> 
+                                                <a href="#">
+                                                    <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                                </a>                                      
+                                            </div>
+                                            <div class="item item-info-foo px-4">                                        
+                                                <p class="pt-2">
+                                                    <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
+                                                </p>                                        
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -162,7 +163,12 @@
                 </div>
             </nav>
             <div class="banner">
-                <img src="assets/images/banner-home.jpg" alt=""/>
+                <div class="isDesktop">
+                    <img src="assets/images/banner-home.jpg" alt=""/>
+                </div>
+                <div class="isMobile"> 
+                    <img src="assets/images/mobile/banner-home.png" alt=""/>
+                </div>                
             </div>            
         </header>
 
@@ -300,7 +306,7 @@
                                                         <div class="description">
                                                             <span class="date">3 FIRMS RUNNING | FROM SEP 2017 - NOW</span>
                                                             <p class="title">F&B</p>
-                                                            <p class="fivo-light">Aura District / FOS Real / Sakura Hotel</p>
+                                                            <p class="fivo-light">Aura District / FOS Real / Sakura Hotel</p>                                                            
                                                         </div>
                                                     </div>
                                                 </div>                                            
@@ -400,8 +406,12 @@
                             <div class="description">
                                 <span class="date">3 FIRMS RUNNING FROM SEP 2017 - NOW</span>
                                 <p class="title">F&B</p>
-                                <p class="fivo-light">Aura District FOS Real Sakura Hotel</p>
-                            </div>  
+                                <p class="fivo-light">Aura District FOS Real Sakura Hotel</p> 
+                                <a href="#" class="see-more">
+                                    See more
+                                    <i class="fa fa-angle-down"></i>
+                                </a>
+                            </div>                                                      
                         </div>
                     </div>
                 </div>
@@ -439,7 +449,7 @@
             </section>
         </div>
         <div class="isMobile">
-            <section id="milestone">  
+            <section id="milestone" class="section">  
                 <div class="row">
                     <div class="col-12">
                         <img src="assets/images/mobile/milestone.png" class="w-100" alt=""/>
@@ -537,13 +547,19 @@
                         </div>
                         <div class="col-sm-6 col-md-6">
                             <img src="assets/images/mobile/news.png" class="w-100" alt=""/>
-                            <a href="#" class="see-more fivo-light">See more</a>
+                            <a href="#" class="see-more fivo-light">
+                                See more
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>                    
                     </div>
                     <div class="row mt-40">                    
                         <div class="col-12">
                             <img src="assets/images/mobile/news2.png" class="w-100" alt=""/>
-                            <a href="#" class="see-more fivo-light">See more</a>
+                            <a href="#" class="see-more fivo-light">
+                                See more
+                                <i class="fa fa-angle-right"></i>
+                            </a>
                         </div>                    
                     </div>
                 </div>
@@ -614,15 +630,15 @@
                             <div class="logo-footer">
                                 <img src="assets/images/mobile/logo-footer.png" alt="">
                             </div>
-                            <div class="social-footer">                      
+                            <div class="social-footer d-flex align-items-center">                      
                                 <a href="#">
-                                    <img src="assets/images/icon/instagram.png" alt
+                                    <img src="assets/images/icon/instagram.png" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/youtube.png" alt
+                                    <img src="assets/images/icon/youtube.png" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/facebook.png" alt
+                                    <img src="assets/images/icon/facebook.png" alt/>
                                 </a>
                             </div>
                         </div>
@@ -630,8 +646,8 @@
 
                     <div id="copyright">                    
                         <div class="row">                        
-                            <div class="col-md-6 col-sm-6">
-                                <div class="item d-flex align-items-center">
+                            <div class="col-12">
+                                <div class="item d-flex align-items-center px-5">
                                     <p>Subscribe to our newsletter </p> 
                                     <a href="#">
                                         <img src="assets/images/icon/email.png" class="newsletter" alt="">

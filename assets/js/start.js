@@ -20,6 +20,8 @@ AURA.openNav = function () {
         $("#mySidenav").fadeIn(500);
         $("body").addClass('no-scroll');        
         showMenu = true;
+        $(".oveplay").show();
+        $(".closebtn").show();
     });
 }
 
@@ -27,6 +29,8 @@ AURA.closeNav = function () {
     $("body").delegate(".closebtn", "click", function () {
         $("#mySidenav").fadeOut(500);
         $("body").removeClass('no-scroll');        
+        $(".oveplay").hide();
+        $(".closebtn").hide();
         showMenu = false;
     });
 }

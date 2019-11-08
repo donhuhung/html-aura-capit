@@ -529,6 +529,10 @@
     .bg-month, #milestone .bg-text img{
         display: none;
     }
+    .timeline-mobile{
+        min-width: 320px;
+        margin-bottom: 4rem;
+    }
     .timeline-mobile .item{        
         margin-right: 30px;    
         margin-top: 20px;
@@ -544,6 +548,7 @@
     }
     .timeline-mobile .item:last-child img{
         height: auto;      
+        margin-top: 20px;
     }
     .timeline-mobile .item:last-child{
         margin-top: 23px;
@@ -552,17 +557,18 @@
         padding: 20px;
     }
     #milestone .see-more{
-        padding: 25px 125px;
+        padding: 25px 0;
         font-size: 16px;
         margin: 0 20px;
         width: auto;
+        text-align: center;
     }
     #news .description{
         text-align: center;
     }
     #news .see-more {
         background-color: #fff;
-        padding: 25px 80px;
+        padding: 25px 0;
         border: 1px solid #231F20;
         color: #231F20;
         margin-left: 20%;
@@ -570,6 +576,7 @@
         position: relative;
         margin-top: -10%; 
         width: auto;
+        text-align: center;
     }
     .thumbnail-about {
         width: 100%;
@@ -609,6 +616,8 @@
         right: 10px;                
         cursor: pointer;        
         width: 40px;
+        z-index: 9999999;
+        display: none;
     }
     .sidenav a {
         text-decoration: none;
@@ -631,21 +640,31 @@
         height: 8px;
         display: block;
     }
+    .sidenav .nav-item:last-child:after{
+        content: "";
+        border-bottom: 1px solid #735146;
+        max-width: 320px;
+        height: 8px;
+        display: block;
+    }
     .social_foo .fa{
         margin-right: 35px;
         font-size: 40px;
         color:rgba(132,85,70,1);
     }
     .no-scroll{
-        overflow: hidden;
+        overflow: hidden;       
+    }
+    .oveplay{
         position:absolute;
         top:0;
         left:0;
         right:0;
         bottom:0;
-        background-color:rgba(0, 0, 0, 0.85);        
-        z-index:9999;
-        color:white;
+        /*background-color:rgba(97, 68, 59, 0.7);*/
+        background-color:rgba(0, 0, 0, 0.7);
+        z-index:999999;
+        display: none;
     }
     .sidenav .item-info-foo p{
         color:#000;
@@ -653,8 +672,8 @@
         margin-top: 10px;        
     }
     .sidenav .nav-link{
-        font-size: 27px;
-        padding: 25px 0;
+        font-size: 23px;
+        padding: 25px 0;        
     }
     .newsletter{        
         margin-left: 15px;
@@ -682,7 +701,6 @@
     footer, footer #copyright {
         background: #fff;
         color: #231F20;
-        padding: 0 15px;
     }
     footer p, footer a {
         color: #231F20;
@@ -700,7 +718,7 @@
         padding: 10px 25px;
         width: 90px;
         height: auto;
-        margin-right: 10px;        
+        margin-right: 25px;        
     }
     footer .fa-envelope{
         font-size: 25px;
@@ -719,13 +737,32 @@
         padding:10px;
         z-index: 99999;
     }
+    .commitment-item:last-child .description{
+        height: 420px;
+        width: 100%;
+    }
 
     .commitment-item{
         height: 380px;
     }
+    .commitment-item .see-more{
+        color: #231F20;
+        background-color: #fff;
+        padding: 20px;
+        width: 250px;
+        bottom: 0;
+        right: 40%;
+        text-align: center;
+        position: absolute;
+    }
+    .see-more .fa{
+        float: right;
+        font-size: 24px;
+        margin-right: 10px;
+    }
 
     .commitment-item:nth-of-type(odd) img {
-        margin-left: -30px;
+        margin-left: -65px;
     }
     .commitment-item:nth-of-type(even) {
         margin-left: -2rem;
@@ -735,19 +772,19 @@
     }   
     .bg-color-mobile{
         background-color: #DBCCBE;
-        height: 875px;
+        height: 945px;
         width: 65%;
         margin-top: -20%;
         position: relative;
     }
     .introduction{
         position: absolute;
-        top: 30%;
+        bottom: -8%;
         padding: 0 30px;
     }
     .introduction .description{
         margin: 10px 70px;
-        width: 220px;
+        width: 210px;
         position: absolute;
     }
     .btn-see-more{
@@ -757,8 +794,9 @@
         margin-left: -25px;
     }
     .btn-see-more .see-more{
-        padding: 30px 110px;
-        width: 300px;
+        padding: 30px 0;
+        width: auto;
+        text-align: center;
     }
 
     /* Insestment*/
@@ -789,9 +827,22 @@
     }
     #categories #carousel-area {
         background: none;
-        padding: 10rem 2rem;
+        padding: 10rem 0 2rem 2rem;
         position: relative;
         display: block;
+    }
+    #carousel-area h3{
+        font-family: 'Copperplate-Regular',sans-serif;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    .aura-type p{
+        margin-bottom: 1rem;
+        font-weight: 600;
+    }
+    .text-agency{
+        top: 15%;
     }
     #categories{
         background: none;
@@ -813,12 +864,15 @@
     .block-program:last-child{
         margin-top: 3rem;
     }
+    #group .description p, #group .description h3{
+        padding: 0 25px;
+    }
     #group .item{
         width: 70%;
         height: 300px;
         margin-left: 15%;
         z-index: 9999;
-        margin-bottom: 8rem;
+        margin-bottom: 3rem;
     }
     #group .real-estate {
         width: 85%;
@@ -833,9 +887,9 @@
     }
     #group .education-bottom {
         left: 0;
-        width: 40%;
+        width: 35%;
         margin-left: 0;
-        margin-top: -40%;
+        margin-top: -35%;
     }
     #group .f-b {
         margin-top: 0%;
@@ -852,6 +906,9 @@
         margin-top: -15%;
         left: 0;
         width: 85%;
+    }
+    #group .row:nth-child(2) {
+        margin-top: 7rem;
     }
 
     /*Investor*/
@@ -873,24 +930,95 @@
         height: 35px;
         margin-top: 10px;
     }
-    .logo-mobile{
-        width: 85px;    
-        margin: 0 20px 25px;
+    .logo-mobile{        
+        margin: 0 20px 25px; 
+        height: auto;
     }
     .menu-footer{
-        margin-left: 35%;        
+        margin-left: 40%;        
     }
     .menu-footer li{
         line-height: 65px;
         text-transform: uppercase;
         text-align: center;
     }
-    .logo-mobile{
-        transform: translatex(10%);        
-        width: 100%;
-        height: auto;
-    }
     .dropdown-menu{
         border: none;
+    }
+    #about-investor{
+        height: auto;
+    }
+    .block-investor{        
+        position: relative;
+        margin-top: 25%;
+    }
+    #about-investor .block-description{
+        height: auto;
+        margin-top: -10%;
+        margin-left: 25%;
+    }
+    #financial img{
+        position: relative;
+        z-index: 9999;
+    }
+    .financial-item #carousel-area{
+        margin-top: 0;
+        transform: none;
+        width: auto;
+        padding: 30px;
+    }
+    .financial-item #carousel-area #carousel-slider{
+        width: auto;
+    }
+    #financial .see-more{
+        width: auto;
+        padding: 30px 0;
+        margin-top: -3rem;
+    }    
+    .financial-item, #financial .description{
+        padding: 0 25px;
+    }
+    #financial .item{
+        height: auto;
+        padding: 40px;
+    }
+    .click-view{
+        width: 75px !important;
+    }
+    .bg-title{
+        width: 60%;
+        margin: -100px 5%;
+        z-index: 99999;
+    }
+    .bg-see-more{
+        width: 30%;
+        margin: 0px 70%;
+        height: 160px;
+    }
+    #individual #carousel-area{
+        width: 235px;
+        margin: 0 8%;
+        height: 160px;
+    }
+    #individual .click-view{
+        width: 55px !important;
+    }
+    #about-investor .bg-color:before{
+        width: auto;
+        height: 95px;
+    }
+    #about-investor .bg-color{
+        position: relative;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    .text-benny{
+        font-family: 'FivoSans-Black',sans-serif;
+        font-size: 65px;
+        line-height: 60px;
+        text-align: left;
+        position: absolute;
+        margin-top: -40%;
+        margin-left: 20px;
     }
 }
