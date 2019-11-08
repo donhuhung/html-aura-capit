@@ -1015,7 +1015,8 @@
         position: absolute;
         margin-top: -40%;
         margin-left: 20px;
-    }
+    }    
+    /*Search*/
     .search{
         display: block;
         position: absolute;
@@ -1023,5 +1024,41 @@
         bottom: 0;
         right: 10px;
         z-index: 999999;
+        cursor: pointer;
+    }
+    .form-search-header {
+        display: none;
+        position: absolute;
+        height: 45px;
+        width: 90%;
+        max-width: 380px;
+        overflow: hidden;
+        background: #f9f9f9;
+        top: 10%;
+        right: 15px;
+        transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+    }
+
+    .form-search-header .input-group {
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #DBCCBE;
+        position: relative;
+    }
+    .form-search-header .input-group .form-control {
+        width: 100%;
+        border-width: 0;
+        padding: 8px 40px 8px 12px;
+        font-size: 14px;
+        line-height: 22px;
+        height: auto;
+    }
+    .form-search-header .input-group .input-group-addon .btn-submit-search {
+        background-color: transparent;
+        border-width: 0;
+        width: 38px;
+        height: 30px;
     }
 }

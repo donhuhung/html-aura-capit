@@ -1,5 +1,6 @@
 var AURA = AURA || {};
 var showMenu = false;
+var showSearch = false;
 $(document).ready(function () {
     AURA.openNav();
     AURA.closeNav();
@@ -12,7 +13,18 @@ $(document).ready(function () {
             $('.timeline .event').removeClass('active');
         }
     );
-
+    $("body").delegate(".icon-search", "click", function () {        
+        if(!showSearch){
+            $(".form-search-header").fadeIn(500);
+            showSearch = true;        
+        }   
+        else{
+            $(".form-search-header").fadeOut(500);
+            showSearch = false;        
+        }
+        
+    });
+    
 })
 
 AURA.openNav = function () {
