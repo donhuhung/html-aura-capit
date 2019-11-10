@@ -179,7 +179,7 @@
         font-size: 15px;
     }
     #carousel-area .carousel-indicators {
-        display: none;
+        display: block;
     }
     #service-block-main .service-item {
         margin: 60px 0;
@@ -347,7 +347,7 @@
         font-size: 15px;
     }
     #carousel-area .carousel-indicators {
-        display: none;
+        display: block;
     }
     #service-block-main .service-item {
         margin: 60px 0;
@@ -542,13 +542,13 @@
         margin-left: 10px;
     }
     .timeline-mobile .item img{
-        width: 45px;
-        height: 45px;      
+        width: 65px;
+        height: 65px;      
         margin-bottom: 20px;  
     }
     .timeline-mobile .item:last-child img{
         height: auto;      
-        margin-top: 20px;
+        margin-top: 10px;
     }
     .timeline-mobile .item:last-child{
         margin-top: 23px;
@@ -605,17 +605,28 @@
         left: 0;
         background-color: #007bff;
         overflow-x: hidden;
-        padding-top: 60px;
+        padding-top: 30px;
         display: none;
         background: #61443B;
         z-index: 9999999;
+    }
+    .icon-social{
+        width: 30px;
+        height: 30px;
+        margin-right: 2rem;
+        filter: brightness(0) invert(1);
+        opacity: 0.1;
+    }
+    .icon-youtube{
+        width: 35px;
+        height: 35px;
     }
     .closebtn {
         position: absolute;
         top: 20px;
         right: 10px;                
         cursor: pointer;        
-        width: 40px;
+        width: 35px;
         z-index: 9999999;
         display: none;
     }
@@ -649,7 +660,7 @@
     }
     .social_foo .fa{
         margin-right: 35px;
-        font-size: 40px;
+        font-size: 35px;
         color:rgba(132,85,70,1);
     }
     .no-scroll{
@@ -662,23 +673,25 @@
         right:0;
         bottom:0;
         /*background-color:rgba(97, 68, 59, 0.7);*/
-        background-color:rgba(0, 0, 0, 0.7);
+        background-color:rgba(0, 0, 0, 0.9);
         z-index:999999;
         display: none;
     }
     .sidenav .item-info-foo p{
         color:#000;
-        font-size: 13px;
+        font-size: 11px;
         margin-top: 10px;        
     }
     .sidenav .nav-link{
-        font-size: 23px;
-        padding: 25px 0;        
+        font-size: 18px;
+        padding: 15px 0;        
     }
     .newsletter{        
         margin-left: 10px;
         margin-top: -20px;
-        width: 25px;
+        width: auto;
+        filter: none;
+        opacity: 1;
     }
 
     .contact-foo .item-info-foo:first-child{
@@ -699,6 +712,11 @@
     }
     footer p, footer a {
         color: #231F20;
+        padding-top: 20px;
+    }
+    .sidenav .contact-foo{
+        position: absolute;
+        bottom: 0;
     }
     .logo-footer img{
         width: 80%;
@@ -710,10 +728,12 @@
         padding: 10px;
     }
     .social-footer img{        
-        padding: 10px 25px;
-        width: 90px;
-        height: auto;
-        margin-right: 25px;        
+        height: 40px !important;
+        margin: 0 35px !important;
+        width: 40px !important;        
+        padding: 0;  
+        opacity: 1;
+        filter: none;
     }
     footer .fa-envelope{
         font-size: 25px;
@@ -721,14 +741,14 @@
         margin-top: -15px;
     }
     .commitment-item img{
-        height: 60%;
+        height: 62%;
         width: auto;
     }
     .commitment-item .description{
         position: absolute;
         background-color: #DBCCBE;
         height: 325px;
-        margin-top: -25%;
+        margin-top: -18%;
         padding:10px;
         z-index: 99999;
     }
@@ -802,7 +822,7 @@
     }
     #categories .first{
         position: absolute !important;
-        padding: 15%;
+        padding: 13%;
     }
     #categories .first .description{
         margin-left: 35%;
@@ -828,8 +848,7 @@
     }
     #carousel-area h3{
         font-family: 'Copperplate-Regular',sans-serif;
-        font-size: 24px;        
-        margin: 0;
+        font-size: 24px;                
     }
     .aura-type p{
         margin-bottom: 1rem;
@@ -845,6 +864,7 @@
         position: absolute;
         width: 65%;
         margin-top: -35%;
+        left: 0;
     }
     .block-program{
         position: relative;
@@ -868,8 +888,16 @@
     }
     .box-education{
         margin: 0 -5%;
-        width: 90%;
+        width: 95%;
         position: relative;
+    }
+    .box-fb{
+        margin: 0 5%;        
+        position: relative;
+        width: 85%;
+    }
+    .box-fb img{
+        margin-left: 17%;                
     }
     #group .item{
         position: absolute;
@@ -922,7 +950,11 @@
     .last{
         border-right: none;
     }
-
+    #financial .carousel-item .bg-color{
+        height: 250px; 
+        width: 300px; 
+        background-color: rgba(219,204,190);
+    }
     #aura-capital .item {
         width: 230px;
         margin-bottom: 2rem;
@@ -934,9 +966,12 @@
         margin-top: 15px;
     }
     .logo-mobile{        
-        margin: 0 20px 25px; 
-        height: auto;
+        margin: 5px 25px 15px; 
+        height: auto;        
     }
+    .sidenav .logo-mobile{
+        width: 20%;
+    }   
     .menu-footer{
         margin-left: 40%;        
     }
@@ -958,12 +993,26 @@
     #about-investor .block-description{
         height: auto;
         margin-top: -10%;
-        margin-left: 25%;
+        margin-left: 10%;
+        width: 100%;
+    }
+    #about-investor.section-mobile{
+        background-image: url(../images/mobile/bg-text-investor.svg);
+        background-repeat: repeat;
+        background-size: auto;
+        background-position: center;
+    }
+    .block-investor .block-description .description{
+        padding: 0 30px;
+    }
+    .block-investor h3{
+        padding: 20px;
     }
     #financial img{
         position: relative;
         z-index: 9999;
-        height: auto;
+        max-height: 700px;
+        top: 20%;
     }
     .financial-item #carousel-area{
         margin-top: 0;
@@ -972,17 +1021,20 @@
         padding: 0;
         height: auto;
         background: none;
+        display: contents;
     }
     .financial-item #carousel-area #carousel-slider{
         width: auto;
     }
-    #financial #carousel-area .carousel-item .description{
-        padding: 0 20px;
+    #financial #carousel-area .carousel-item .description{        
+        padding: 0 10px;
+        position: absolute;
+        top: 10px;
     }
     #financial .see-more{
         width: 240px;
         padding: 25px 0;
-        margin-top: -1px;
+        margin-top: -25%;
         position: relative;
         margin-left: 6rem;
     } 
@@ -1003,13 +1055,21 @@
     }
     .bg-see-more{
         width: 30%;
-        margin: 0px 70%;
+        margin: 0;
         height: 160px;
+        position: absolute;
+        right: 8%;
     }
     #individual #carousel-area{
         width: 235px;
-        margin: 0 8%;
+        margin: 0 7%;
         height: 160px;
+        padding: 15px;
+        display: inherit;        
+        position: relative;
+    }
+    #individual .carousel-item h3{
+
     }
     #individual .click-view{
         width: 55px !important;
@@ -1024,14 +1084,28 @@
         margin-left: 0;
     }
     .text-benny{
-        font-family: 'FivoSans-Black',sans-serif;
-        font-size: 65px;
-        line-height: 60px;
-        text-align: left;
-        position: absolute;
         margin-top: -40%;
         margin-left: 20px;
     }    
+    .financial-item .carousel-indicators{
+        justify-content: flex-end;
+        margin-left: 0;
+        bottom: 0 !important;
+        position: relative;
+        top: 30px;
+        left: 35px;
+        display: flex !important;
+    }
+    .financial-item .carousel-inner{
+        top: -80px;
+    }
+    #carousel-area .carousel-indicators li{
+        border:1px solid #000;
+    }
+    .icon-finacial{
+        width: 60px !important;
+        height: auto !important;
+    }
     /*Search*/
     .search{
         display: block;
@@ -1076,4 +1150,13 @@
         width: 38px;
         height: 30px;
     }
+
+    .section-mobile{
+        padding: 10px;
+    }    
+    .loading .bg_img {
+        width: 185px;
+        height: 80px;
+    }
+
 }

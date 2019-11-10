@@ -37,7 +37,15 @@
             <![endif]-->
     </head>
     <body class="investment">
+         <!--Loading-->
+        <div class="transition-curtains">
+            <div class="transition-curtains__curtain"></div>
 
+            <div class="loading">
+                <div data-wow-iteration="10" data-wow-duration="0.15" class="wow pulse bg_img"></div>
+            </div>
+        </div>
+        <!--End Loading-->
         <div class="oveplay"></div>
         <div class="isMobile">
             <div>
@@ -50,7 +58,7 @@
                 <div class="form-group">
                     <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
                     <div class="input-group">                
-                        <input type="text" name="s" class="form-control" id="exampleInputAmount" placeholder="Tìm kiếm..." value="">                    
+                        <input type="text" name="s" class="form-control" id="exampleInputAmount" placeholder="Search..." value="">                    
                         <div class="input-group-addon">
                             <button type="submit" class="fa fa-search btn-submit-search"></button>
                         </div>
@@ -64,7 +72,7 @@
                 <div class="menu-header">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/mobile/logo-investment-mobile.png" class="logo-mobile" alt="">
+                            <img src="assets/images/mobile/logo-mobile.png" class="logo-mobile" alt="">
                         </a>
                         <img src="assets/images/mobile/navbar-toggler.png" class="toggle-menu" alt=""> 
                     </div>                   
@@ -73,12 +81,12 @@
                             <div class="sidenav" id="mySidenav">                                
                                 <ul class="navbar-nav mr-auto">
                                     <li>
-                                        <a href="#">
+                                        <a href="index.html">
                                             <img src="assets/images/mobile/logo.png" alt="" class="logo-mobile"/>
                                         </a>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="/index.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             Introduction
                                         </a>
                                         <ul class="dropdown-menu">
@@ -105,21 +113,26 @@
                                 </ul>                    
                                 <div class="container">
                                     <div class="d-flex flex-wrap">
-                                        <div class="item item-info-foo px-4">
+                                        <div class="item item-info-foo px-3">
                                             <p class="d-flex align-items-center social_foo">
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-instagram.svg" class="icon-social"/></a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-youtube.svg" class="icon-social icon-youtube"/></a>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-facebook.svg" class="icon-social"/></a>
+                                                </a>
                                             </p>
                                         </div>
                                         <div class="contact-foo">
-                                            <div class="item item-info-foo px-4 d-flex align-items-center">                                        
+                                            <div class="item item-info-foo px-3 d-flex align-items-center">                                        
                                                 <p>Subscribe to our newsletter </p> 
                                                 <a href="#">
-                                                    <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                                    <img src="assets/images/icon/email.svg" class="newsletter" alt="">
                                                 </a>                                      
                                             </div>
-                                            <div class="item item-info-foo px-4">                                        
+                                            <div class="item item-info-foo px-3">                                        
                                                 <p class="pt-2">
                                                     <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
                                                 </p>                                        
@@ -145,7 +158,7 @@
 
         </header>
 
-        <section id="categories">
+        <section id="categories" class="section-mobile">
             <div class="isMobile">
                 <div class="row">
                     <div class="bg-color-mobile"></div>
@@ -232,7 +245,7 @@
             </div>
 
 
-            <div class="program">
+            <div class="program" class="section-mobile">
                 <div class="row">
                     <div class="col-12 mb-50">
                         <img src="assets/images/mobile/bg-agency.png" class="bg-agency" alt=""/>
@@ -315,7 +328,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="box-real-estate">
+                <div class="box-fb">
                     <img src="assets/images/mobile/box-fb.png" class="w-100" alt=""/>
                 </div>
                 <div class="item">
@@ -438,17 +451,17 @@
                     <div class="row section">
                         <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
                             <div class="logo-footer">
-                                <img src="assets/images/mobile/logo-footer.png" alt="">
+                                <img src="assets/images/mobile/logo-footer.svg" alt="">
                             </div>
                             <div class="social-footer d-flex align-items-center">                      
                                 <a href="#">
-                                    <img src="assets/images/icon/instagram.png" alt/>
+                                    <img src="assets/images/icon/mobile-instagram.svg" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/youtube.png" alt/>
+                                    <img src="assets/images/icon/mobile-youtube.svg" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/facebook.png" alt/>
+                                    <img src="assets/images/icon/mobile-facebook.svg" alt/>
                                 </a>
                             </div>
                         </div>
@@ -460,7 +473,7 @@
                                 <div class="item d-flex align-items-center px-5">
                                     <p>Subscribe to our newsletter </p> 
                                     <a href="#">
-                                        <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                        <img src="assets/images/icon/email.svg" class="newsletter" alt="">
                                     </a> 
                                 </div>
                                 <div class="item">
@@ -498,27 +511,12 @@
 
         <script src="assets/js/bootstrap.min.js"></script>
 
-        <script src="assets/js/color-switcher.js"></script>
-
-        <script src="assets/js/jquery.mixitup.js"></script>
-
         <script src="assets/js/wow.js"></script>
 
         <script src="assets/js/owl.carousel.js"></script>
 
-        <script src="assets/js/waypoints.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
         <script src="assets/js/jquery.slicknav.js"></script>
-
-        <script src="assets/js/jquery.appear.js"></script>
-
-        <script src="assets/js/jquery.vide.js"></script>
-
-        <script src="assets/js/main.js"></script>
         <script src="assets/js/start.js"></script>
+
     </body>
 </html>

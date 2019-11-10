@@ -35,6 +35,15 @@
             <![endif]-->
     </head>
     <body>
+         <!--Loading-->
+        <div class="transition-curtains">
+            <div class="transition-curtains__curtain"></div>
+
+            <div class="loading">
+                <div data-wow-iteration="10" data-wow-duration="0.15" class="wow pulse bg_img"></div>
+            </div>
+        </div>
+        <!--End Loading-->
         <div class="oveplay"></div>
         <div class="isMobile">
             <div>
@@ -47,7 +56,7 @@
                 <div class="form-group">
                     <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
                     <div class="input-group">                
-                        <input type="text" name="s" class="form-control" id="exampleInputAmount" placeholder="Tìm kiếm..." value="">                    
+                        <input type="text" name="s" class="form-control" id="exampleInputAmount" placeholder="Search..." value="">                    
                         <div class="input-group-addon">
                             <button type="submit" class="fa fa-search btn-submit-search"></button>
                         </div>
@@ -61,7 +70,7 @@
                 <div class="menu-header">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/mobile/logo-aura.png" class="logo-mobile" alt="">
+                            <img src="assets/images/mobile/logo-mobile.png" class="logo-mobile" alt="">
                         </a>
                         <img src="assets/images/mobile/navbar-toggler.png" class="toggle-menu" alt="">                                               
                     </div>                    
@@ -104,7 +113,7 @@
                             <div class="sidenav" id="mySidenav">                                
                                 <ul class="navbar-nav mr-auto">
                                     <li>
-                                        <a href="#">
+                                        <a href="index.html">
                                             <img src="assets/images/mobile/logo.png" alt="" class="logo-mobile"/>
                                         </a>
                                     </li>
@@ -136,21 +145,26 @@
                                 </ul>                    
                                 <div class="container">
                                     <div class="d-flex flex-wrap">
-                                        <div class="item item-info-foo px-4">
+                                        <div class="item item-info-foo px-3">
                                             <p class="d-flex align-items-center social_foo">
-                                                <a href="#"><i class="fa fa-instagram"></i></a>
-                                                <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-instagram.svg" class="icon-social"/></a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-youtube.svg" class="icon-social icon-youtube"/></a>
+                                                </a>
+                                                <a href="#">
+                                                    <img src="assets/images/icon/mobile-facebook.svg" class="icon-social"/></a>
+                                                </a>
                                             </p>
                                         </div>
                                         <div class="contact-foo">
-                                            <div class="item item-info-foo px-4 d-flex align-items-center">                                        
+                                            <div class="item item-info-foo px-3 d-flex align-items-center">                                        
                                                 <p>Subscribe to our newsletter </p> 
                                                 <a href="#">
-                                                    <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                                    <img src="assets/images/icon/email.svg" class="newsletter" alt="">
                                                 </a>                                      
                                             </div>
-                                            <div class="item item-info-foo px-4">                                        
+                                            <div class="item item-info-foo px-3">                                        
                                                 <p class="pt-2">
                                                     <span class="pt-3">Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, VietNam</span>                                                        
                                                 </p>                                        
@@ -176,13 +190,13 @@
 
         </header>
 
-        <section id="about-investor">
+        <section id="about-investor" class="section-mobile">
             <div class="container">                
                 <div class="row block-investor">                    
                     <div class="col-12">
                         <div>
-                            <div class="bg-color">
-                                <p class="text-benny">Benny Đâu</p>
+                            <div class="bg-color">                                
+                                <img src="assets/images/mobile/benny-dau.png" class="text-benny" alt=""/>
                             </div>                            
                             <div class="intro-investor">
                                 <img src="assets/images/mobile/mr-nhat.png" class="mr-nhat w-100" alt=""/>
@@ -210,7 +224,7 @@
 
         </section>
 
-        <section id="financial">
+        <section id="financial" class="section-mobile">
             <div class="row">                
                 <div class="col-12">
                     <div class="financial-item">
@@ -224,6 +238,7 @@
                                     <div class="carousel-item active">  
                                         <div class="row">
                                             <div class="col-6">
+                                                <div class="bg-color"></div>
                                                 <div class="description">
                                                     <h3 class="font-copperplate">FINANCIAL <br/> CALENDAR</h3>
                                                     <p>
@@ -235,11 +250,33 @@
                                                 </div>
                                             </div>
                                             <div class="col-6">
-                                                <img src="assets/images/mobile/finacial.png" alt=""/>
+                                                <img src="assets/images/mobile/finacial.png" class="finacial" alt=""/>
                                             </div>
                                         </div>       
                                                               
                                     </div>
+
+                                    <div class="carousel-item">  
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="bg-color"></div>
+                                                <div class="description">
+                                                    <h3 class="font-copperplate">FINANCIAL <br/> CALENDAR</h3>
+                                                    <p>
+                                                        Aura Capital is an private equity combines investors in Vietnam with our angel investors of MOC all over the world. Our investments expand in various catergories such as: real eatate, education, F&B, technology. We are proud of our innovation and pioneering spirit – we are committed to continuously developing new products & services for our investors.
+                                                    </p>
+                                                    <p>
+                                                        View the key dates in our calendar for results presentations, shareholder meetings and dividend timings, and download a reminder for each.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <img src="assets/images/mobile/finacial.png" class="finacial" alt=""/>
+                                            </div>
+                                        </div>       
+                                                              
+                                    </div>
+
                                 </div>                                            
                             </div>
                         </div>       
@@ -258,7 +295,7 @@
                     <div class="col-12">
                         <div class="item">
                             <div class="block-image d-flex align-items-center">
-                                <img src="assets/images/icon/icon-publication.png">
+                                <img src="assets/images/icon/icon-publication.svg" class="icon-finacial">
                                 <img src="assets/images/click-view.png" class="click-view">
                             </div>                        
                             <p class="title">Publications</p>
@@ -270,7 +307,7 @@
                     <div class="col-12">
                         <div class="item">
                             <div class="block-image d-flex align-items-center">
-                                <img src="assets/images/icon/icon-desk.png">
+                                <img src="assets/images/icon/icon-desk.svg" class="icon-finacial">
                                 <img src="assets/images/click-view.png" class="click-view">
                             </div>                            
                             <p class="title">Deck Of Presentation</p>
@@ -281,7 +318,7 @@
                     <div class="col-12">
                         <div class="item last">
                             <div class="block-image d-flex align-items-center">
-                                <img src="assets/images/icon/icon-release.png">
+                                <img src="assets/images/icon/icon-release.svg" class="icon-finacial">
                                 <img src="assets/images/click-view.png" class="click-view">
                             </div>                        
                             <p class="title">Press Release</p>
@@ -295,7 +332,7 @@
 
         </section>
 
-        <section id="individual">
+        <section id="individual" class="section-mobile">
             <div>
                 <img src="assets/images/mobile/thumbnail-individual.png" class="w-100">
             </div>            
@@ -308,23 +345,17 @@
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="carousel-item active">                                
-                                <div class="description">
-                                    <!--<div class="bg-title">
-                                        <h3 class="title-first">individual</h3>
-                                        <h3 class="title-last">shareholders</h3>
-                                    </div>-->                 
+                                <div class="bg-title">
+                                    <h3 class="title-first">individual</h3>
+                                    <h3 class="title-last">shareholders</h3>
+                                </div>
+                                <div class="description">                                    
                                     <p class="fivo-light">
                                         Why you should become a shareholder and share AURA’s adventure
                                     </p>
                                 </div>
                             </div>
-                            <div class="carousel-item">                                
-                                <div class="description">   
-                                    <p class="fivo-light">
-                                        Why you should become a shareholder and share AURA’s adventure
-                                    </p>
-                                </div>
-                            </div>
+
                         </div>                                            
                     </div>
                 </div>     
@@ -335,7 +366,7 @@
 
         </section>
 
-        <section id="aura-capital" class="section">
+        <section id="aura-capital" class="section-mobile">
             <div class="container">
                 <h1 class="text-center mb-50">Aura Capital Share</h1>
                 <div class="row">
@@ -346,7 +377,7 @@
                         </div>
                     </div> 
                     <div class="col-sm-6 col-md-3">
-                        <div class="item active">
+                        <div class="item">
                             <p class="aura-title">Capital structure</p>
                             <img src="assets/images/click-view.png" class="click-view">
                         </div>
@@ -428,17 +459,17 @@
                     <div class="row section">
                         <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
                             <div class="logo-footer">
-                                <img src="assets/images/mobile/logo-footer.png" alt="">
+                                <img src="assets/images/mobile/logo-footer.svg" alt="">
                             </div>
                             <div class="social-footer d-flex align-items-center">                      
                                 <a href="#">
-                                    <img src="assets/images/icon/instagram.png" alt/>
+                                    <img src="assets/images/icon/mobile-instagram.svg" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/youtube.png" alt/>
+                                    <img src="assets/images/icon/mobile-youtube.svg" alt/>
                                 </a>
                                 <a href="#">
-                                    <img src="assets/images/icon/facebook.png" alt/>
+                                    <img src="assets/images/icon/mobile-facebook.svg" alt/>
                                 </a>
                             </div>
                         </div>
@@ -450,7 +481,7 @@
                                 <div class="item d-flex align-items-center px-5">
                                     <p>Subscribe to our newsletter </p> 
                                     <a href="#">
-                                        <img src="assets/images/icon/email.png" class="newsletter" alt="">
+                                        <img src="assets/images/icon/email.svg" class="newsletter" alt="">
                                     </a> 
                                 </div>
                                 <div class="item">
@@ -488,27 +519,12 @@
 
         <script src="assets/js/bootstrap.min.js"></script>
 
-        <script src="assets/js/color-switcher.js"></script>
-
-        <script src="assets/js/jquery.mixitup.js"></script>
-
         <script src="assets/js/wow.js"></script>
 
         <script src="assets/js/owl.carousel.js"></script>
 
-        <script src="assets/js/waypoints.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
         <script src="assets/js/jquery.slicknav.js"></script>
-
-        <script src="assets/js/jquery.appear.js"></script>
-
-        <script src="assets/js/jquery.vide.js"></script>
-
-        <script src="assets/js/main.js"></script>
         <script src="assets/js/start.js"></script>
+
     </body>
 </html>

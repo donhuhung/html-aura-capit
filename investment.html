@@ -37,14 +37,25 @@
             <![endif]-->
     </head>
     <body class="investment">
+         <!--Loading-->
+        <div class="transition-curtains">
+            <div class="transition-curtains__curtain"></div>
 
+            <div class="loading">
+                <div data-wow-iteration="10" data-wow-duration="0.15" class="wow pulse bg_img"></div>
+            </div>
+        </div>
+        <!--End Loading-->
+        <main>
+            <div data-scroll>
+                <div class="content">    
         <header id="header-wrap" class="sticky-jump">
 
             <nav class="navbar navbar-expand-md">
                 <div class="menu-header">
                     <div class="navbar-header">
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/images/logo-investment.png" class="logo" alt="">
+                            <img src="assets/images/logo-investment.svg" class="logo" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -113,7 +124,7 @@
         <section id="categories" class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                    <div class="col-sm-6 col-md-4 wow fadeIn" data-wow-delay=".5s">
                         <div id="timeline-content">                        
                             <ul class="timeline">
                                 <li class="event">
@@ -140,7 +151,7 @@
                     </div>
                     <div class="col-sm-6 col-md-8">
                         <div class="row">
-                            <div class="col-sm-6 col-md-6">
+                            <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".5s">
                                 <div class="item first">
                                     <img src="assets/images/image-five-plus.png" alt="">
                                     <div class="description">
@@ -155,7 +166,7 @@
                                     </div>                                    
                                 </div> 
                             </div>
-                            <div class="col-sm-6 col-md-6">
+                            <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".8s">
                                 <div class="item">
                                     <div class="bg-color"></div>
                                     <div id="carousel-area">
@@ -182,7 +193,7 @@
                 </div>
 
                 <div class="row activity">
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".5s">
                         <div class="block-activity">
                             <img src="assets/images/activity-5.png" alt=""/>
                             <div id="carousel-area">
@@ -245,14 +256,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6">
+                    <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".8s">
                         <img src="assets/images/activity-2.png" class="activity-right" alt="">
                     </div>
                 </div>
 
                 <div class="program section">
                     <div class="row">
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".5s">
                             <p class="text-description">
                                 We are an intergrated solution for your next 
                                 business-oriented campaign. More than a 
@@ -267,7 +278,7 @@
                                 <img src="assets/images/text-agency.png" class="text-agency" alt=""/>
                             </div>                            
                         </div>
-                        <div class="col-sm-6 col-md-6">
+                        <div class="col-sm-6 col-md-6 wow fadeIn" data-wow-delay=".8s">
                             <p class="text-description">
                                 We are an intergrated solution for your next 
                                 business-oriented campaign. More than a 
@@ -294,7 +305,7 @@
             <div class="container">
                 <div class="isDesktop">
                     <div class="row">
-                        <div class="item">
+                        <div class="item wow fadeIn" data-wow-delay=".5s">
                             <div class="description">
                                 <h3>
                                     REAL ESTATE
@@ -312,7 +323,7 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="item wow fadeIn" data-wow-delay=".8s">
                             <div class="description">
                                 <img src="assets/images/education1.png" class="education-top" alt=""/>
                                 <h3>
@@ -339,7 +350,7 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="item wow fadeIn" data-wow-delay="1.2s">
                             <div class="description">
                                 <h3>
                                     F&B
@@ -357,7 +368,7 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="item wow fadeIn" data-wow-delay="1.4s">
                             <div class="description">
                                 <h3>
                                     TECHNOLOGY
@@ -375,7 +386,7 @@
                             </div>
                         </div>
 
-                        <div class="item">
+                        <div class="item wow fadeIn" data-wow-delay="1.6s">
                             <div class="description">
                                 <h3>
                                     COMMUNITY
@@ -399,51 +410,59 @@
 
         <footer>
 
-            <div class="container">
-                <div class="row section">
-                    <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
-                        <div class="logo-footer">
-                            <img src="assets/images/logo-footer.png" alt="">
+            <div class="isDesktop">
+                <div class="container">
+                    <div class="row section">
+                        <div class="footer-widget col-md-6 col-xs-12 wow fadeIn">   
+                            <div class="logo-footer">
+                                <img src="assets/images/logo.svg" alt="">
+                            </div>
+                            <div class="social-footer">
+                                <a href="#">Follow us: </a>                            
+                                <a href="#">
+                                    <img src="assets/images/icon/mobile-instagram.svg" alt/>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/icon/mobile-youtube.svg" alt/>
+                                </a>
+                                <a href="#">
+                                    <img src="assets/images/icon/mobile-facebook.svg" alt/>
+                                </a>
+                            </div>
                         </div>
-                        <div class="social-footer">
-                            <a href="#">Follow us: </a>                            
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                            <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        </div>
-                    </div>
 
-                    <div class="footer-widget col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".8s">
-                        <div class="row subscribe">
-                            <p>Subscribe to our newsletter </p> 
-                            <a href="#">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>                       
-                        </div>                        
+                        <div class="footer-widget col-md-6 col-xs-12 wow fadeIn" data-wow-delay=".8s">
+                            <div class="row subscribe">
+                                <p>Subscribe to our newsletter </p> 
+                                <a href="#">
+                                    <img src="assets/images/icon/email.svg" class="newsletter" alt="">
+                                </a>                       
+                            </div>                        
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="copyright">
-                <div class="container">
-                    <div class="row">                        
-                        <div class="col-md-6 col-sm-6">
-                            <ul class="nav nav-inline">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Sitemap</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Credits</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-md-6 col-sm-6">
-                            <p class="copyright-text justify-content-end">
-                                Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, Vietnam
-                            </p>
+                <div id="copyright">
+                    <div class="container">
+                        <div class="row">                        
+                            <div class="col-md-6 col-sm-6">
+                                <ul class="nav nav-inline">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Sitemap</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Credits</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                                <p class="copyright-text justify-content-end">
+                                    Address Aura Capital: 02 HimLam, Nguyen Van Linh, District 7, HCMC, Vietnam
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -456,6 +475,9 @@
             <i class="fa fa-angle-up">
             </i>
         </a>
+        </div>
+            </div>
+        </main>
 
         <script src="assets/js/jquery-min.js"></script>
 
@@ -463,27 +485,14 @@
 
         <script src="assets/js/bootstrap.min.js"></script>
 
-        <script src="assets/js/color-switcher.js"></script>
-
-        <script src="assets/js/jquery.mixitup.js"></script>
-
         <script src="assets/js/wow.js"></script>
 
         <script src="assets/js/owl.carousel.js"></script>
 
-        <script src="assets/js/waypoints.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
-        <script src="assets/js/jquery.counterup.min.js"></script>
-
         <script src="assets/js/jquery.slicknav.js"></script>
-
-        <script src="assets/js/jquery.appear.js"></script>
-
-        <script src="assets/js/jquery.vide.js"></script>
-
-        <script src="assets/js/main.js"></script>
         <script src="assets/js/start.js"></script>
+        <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="assets/js/scripts.js"></script>        
+
     </body>
 </html>
