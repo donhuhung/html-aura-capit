@@ -20,7 +20,7 @@ $(document).ready(function () {
                         $(this).hide();
                     });
                     $('.block-commitment .' + type).show();
-                    $('.owl-controls').hide();
+                    $('.slick-dots').hide();
                 }
 
                 $('.timeline .event').removeClass('active');
