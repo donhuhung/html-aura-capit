@@ -3727,7 +3727,9 @@ h4{
     height: 535px;
     object-fit: cover;
 }
-
+.commitment-item{
+    padding: 0 9px;
+}
 .commitment-item img{
     width: 350px;
     height: 242px;
@@ -3772,6 +3774,7 @@ h1 {
 }
 #timeline-content {
     margin-top: 10px;
+    margin-left: 35%;
 }
 .timeline {
     border-left: 2px solid #A9ABAD;
@@ -4105,9 +4108,6 @@ footer .nav-item .active{
     background-size: cover;
     height: auto;
 }
-.activity{
-    margin-top: 12rem;
-}
 #categories .timeline{
     margin: auto;
 }
@@ -4150,28 +4150,29 @@ footer .nav-item .active{
     font-family: 'FivoSans-Light', sans-serif;
     font-size: 15px;
 }
-.block-activity{
+.block-activity:after{
+    content: '';
+    display: block;
     background-color: #DBCCBE;
+    width: 50%;
+}
+.block-activity{    
     padding: 40px 0;
     max-height: 865px;
+    margin-top: 12rem;
 }
 .block-activity .description{
     padding: 10px 30px;
     width: 350px;
 }
-.block-activity h3{
-    margin-top: 7rem;
+.block-activity h3{    
     margin-left: -80px;
     font-family: 'Copperplate-Regular', sans-serif;
     font-size: 38px;
     font-weight: 600;
 }
-.block-activity #carousel-area{
-    position: absolute;
-    top: 40px;
-    left: 60%;
-    padding: 0 !important;
-    width: auto !important;
+.block-activity .block-description{
+    margin-top: 7rem;
 }
 .block-activity .carousel-item img
 {
@@ -4438,4 +4439,66 @@ aside h3 {
 }
 .logo-footer img{
     width: 200px;
+}
+/*Slider Slick*/
+.slider {
+    width: 100%;
+    margin-top:30px;
+}
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+.slick-slide {
+    transition: all ease-in-out .3s;
+    opacity: .2;
+}
+.regular-category .slick-slide {
+    margin: 0px 5px;
+}
+.regular .slick-slide {
+    margin: 0px 15px;
+}
+.slick-active, .slick-center {
+    opacity: 1 !important;
+}
+.slick-current {
+    opacity: 0.5;
+}
+.slick-dots li button:before{
+    font-size: 45px !important;
+    color:#0071BC !important;
+}
+.slick-slide img{
+    width:100%;
+}
+.slick-dots li.slick-active button:before{
+    color: #000 !important;
+}
+.slick-dots li button:before{
+    font-size: 30px !important;
+}
+.fadeInLeft{
+    z-index: 99999;
+}
+.regular-category{
+    margin-top: 10rem;
+    margin-left: 20%;
+}
+.regular-category .slick-dots, .commitment-carousel .slick-dots{
+    text-align: left;
+    left: 8%;
+}
+.commitment-carousel .slick-dots{
+    left: 14%;
+}
+.block-activity .bg-color{    
+    width: 40% !important;
+    margin: -1rem 0 !important;
+    height: 900px !important;
+}
+
+/* the parent */
+.slick-list {
+    margin: 0 -10px;
 }
